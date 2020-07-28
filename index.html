@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+	
+    
+    <title>Multi Level DropDown</title>
+</head>
+<style type="text/css">
+    html,body{
+ padding: 0;
+ margin: 0;
+ font-family: 'Open Sans', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    margin: 0;
+    text-align: center;
+    padding: 12px 15px 12px 15px;
+    background: #5F6975;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.mainMenu>li{
+    display: inline-block;
+    margin-left: -5px;
+}
+li:hover>a{
+    background: #4B545F;
+    cursor: pointer;
+}
+.subMenu{
+    position: absolute;
+    display: none;
+}
+.subMenu li{
+    border-top: 1px solid #575F6A;
+    border-bottom: 1px solid #6B727C;
+    position: relative;
+}
+.mainMenu>li:hover .subMenu{
+    display: block;
+}
+.SuperSubMenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    -ms-transform: translate(100%,0);
+    -webkit-transform: translate(100%,0);
+    transform:translate(100%,0);
+    display: none;
+}
+.subMenu li:hover>.SuperSubMenu{
+    display: block;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+</style>
+<body>
+<nav>
+    <h1 style="color: grey;padding-left: 10px; font-size: xx-large; font-style: italic;"><b>campusX</b> multilevel dropdown menu</h1>
+</nav>
+<nav style="background-color: #575F6A">
+    <ul class="mainMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tutorial <i class="arrow down"></i></a>
+         <ul class="subMenu">
+             <li><a href="#">Photoshop</a></li>
+             <li><a href="#">Illustrator</a></li>
+             <li><a href="#">Web Design <i class="arrow right"></i></a>
+                 <ul class="SuperSubMenu">
+                     <li><a href="#">HTML</a></li>
+                     <li><a>CSS <i class="arrow right"></i></a>
+                         <ul class="SuperSubMenu">
+                             <li><a href="#">HTML</a></li>
+                             <li><a href="#">CSS <i class="arrow right"></i></a>
+                                 <ul class="SuperSubMenu">
+                                     <li><a href="#">HTML</a></li>
+                                     <li><a href="#">CSS</a>
+                                 
+                                     </li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </li>
+                 </ul>
+             </li>
+         </ul>
+        </li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Inspiration</a></li>
+    </ul>
+</nav><br><br>
+<div>
+    <h1 style="padding-left: 20px; padding-right: 20px">ONLINE EDUCATION
+</h1><br>
+<h2  style="padding-left: 20px; padding-right: 20px">Online education is a flexible instructional delivery system that encompasses any kind of learning that takes place via the Internet. Online learning gives educators an opportunity to reach students who may not be able to enroll in a traditional classroom course and supports students who need to work on their own schedule and at their own pace.
+
+The quantity of distance learning and online degrees in most disciplines is large and increasing rapidly. Schools and institutions that offer online learning are also increasing in number. Students pursuing degrees via the online approach must be selective to ensure that their coursework is done through a respected and credentialed institution.</h2>
+</div>
+ </body>
+</html>
